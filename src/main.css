@@ -1,0 +1,7 @@
+html, body {
+  margin: 0;
+}
+
+.remark-code, .remark-inline-code {
+  font-family: 'Courier New', Courier, monospace;
+}

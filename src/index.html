@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="en" class="h-full">
+
+<head>
+    <meta charset="utf-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="application-name" content="Remarkise">
+    <meta name="description" content="Render your markdown as remark slides, in real time">
+    <meta name="keywords" content="remark,markdown,md,slide,slideshow,remarkise">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.2.0/utilities.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+    <title>Remarkise render your markdown as remark slides, in real time</title>
+</head>
+
+<body class="font-sans h-full">
+
+    <div id="remarkise" class="flex flex-col items-center justify-center h-full px-4">
+        <h1 class="text-4xl">Remark<span class="text-orange-700">ise</span></h1>
+        <p id="remarkise-message" class="mb-10 text-gray-700 text-xl">
+            Render your <a href="http://commonmark.org/">markdown</a> as <a href="https://github.com/gnab/remark">remark</a> slides in real time.
+        </p>
+        <div class="flex flex-row hidden mb-10">
+            <input id="remarkise-url" class="text-base w-64 border-gray-500 border-solid mr-2 px-2 py-2 rounded"
+                placeholder="URL of a remote markdown file" autofocus="autofocus" />
+            <input id="remarkise-button"
+                class="text-base bg-gray-100 border-2 border-gray-500 border-solid cursor-pointer hover:bg-blue-700 hover:text-white px-4 rounded text-black"
+                type="submit" value="Load" />
+        </div>
+        <input class="hidden" type="file" name="remarkise-upload" id="remarkise-upload">
+        <div id="remarkise-drop-area"
+            class="text-base border-2 border-dashed border-orange-700 cursor-pointer hover:bg-orange-100 p-8 rounded text-orange-900">
+            use a local markdown file (drop or click here)</div>
+        <div id="remarkise-fullscreen" class="absolute cursor-pointer z-20 hover:opacity-100 opacity-25 p-4 right-0 text-3xl top-0">🛰</div>
+    </div>
+
+
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/remark/0.14.0/remark.min.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
+
+</body>
+
+</html>
