@@ -17,7 +17,7 @@ class Remarkise {
   }
 
   handleFullscreen () {
-    this.fullscreenEl.addEventListener('click', this.toggleFullscreen)
+    this.fullscreenEl.addEventListener('click', () => this.toggleFullscreen())
   }
 
   goFullscreen () {
