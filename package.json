@@ -9,7 +9,7 @@
   "devDependencies": {
     "eslint": "8.1.0",
     "eslint-config-standard": "16.0.3",
-    "eslint-plugin-html": "6.2.0",
+    "eslint-plugin-html": "7.1.0",
     "eslint-plugin-import": "2.25.2",
     "eslint-plugin-node": "11.1.0",
     "eslint-plugin-promise": "5.1.1",
